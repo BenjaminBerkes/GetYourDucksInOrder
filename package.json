@@ -1,0 +1,27 @@
+{
+  "name": "getyourducksinorder",
+  "version": "1.0.0",
+  "description": "A game to help you get your ducks in a row.",
+  "homepage": "https://github.com/BenjaminBerkes/GetYourDucksInOrder#readme",
+  "bugs": {
+    "url": "https://github.com/BenjaminBerkes/GetYourDucksInOrder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminBerkes/GetYourDucksInOrder.git"
+  },
+  "license": "ISC",
+  "author": "Benjamin Berkes",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^44.0.0"
+  },
+  "dependencies": {
+    "p5": "^2.3.2"
+  }
+}
