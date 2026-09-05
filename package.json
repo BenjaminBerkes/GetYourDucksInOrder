@@ -1,8 +1,10 @@
 {
   "name": "getyourducksinorder",
+  "private": true,
   "version": "1.0.0",
   "description": "A game to help you get your ducks in a row.",
   "homepage": "https://github.com/BenjaminBerkes/GetYourDucksInOrder#readme",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/BenjaminBerkes/GetYourDucksInOrder/issues"
   },
@@ -12,16 +14,22 @@
   },
   "license": "ISC",
   "author": "Benjamin Berkes",
-  "type": "commonjs",
-  "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "electron": "^44.0.0"
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6",
+    "vite-plugin-electron": "^0.28.6",
+    "vite-plugin-electron-renderer": "^0.14.5"
   },
+  "main": "dist-electron/main.js",
   "dependencies": {
-    "p5": "^2.3.2"
+    "pixi.js": "^8.20.1"
   }
 }
