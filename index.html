@@ -4,11 +4,18 @@
 <head>
   <title>Get Your Ducks In Order</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="./src/styles.css">
 </head>
 
 <body style="overflow: hidden;">
-  <div style="background-color: blanchedalmond;">HTML body div text working</div>
+  <div id="titlebar">
+    <div id="titlebar-title">Test</div>
+    <button id="titlebar-button-minimize"><img id="minimize-svg" src="Minimize.svg"></button>
+    <button id="titlebar-button-maximize"><img id="maximize-svg" src="Maximize.svg"></button>
+    <button id="titlebar-button-close"><img id="close-svg" src="Close.svg"></button>
+  </div>
   <p id="info"></p>
+  <button id="test-button">Test Button</button>
 </body>
 <script type="module" src="./src/renderer.ts"></script>
 

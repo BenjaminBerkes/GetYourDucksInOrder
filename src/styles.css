@@ -1,0 +1,63 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: darkslategray;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#titlebar {
+    -webkit-app-region: drag;
+    background-color: #203636;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+}
+
+#titlebar-title {
+    justify-self: left;
+}
+
+#titlebar-button-minimize {
+    -webkit-app-region: no-drag;
+    background-color: #203636;
+    border: 0;
+}
+
+#titlebar-button-minimize:hover {
+    background-color: #3e6868;
+}
+
+#minimize-svg {
+    scale: 50%;
+}
+
+#titlebar-button-maximize {
+    -webkit-app-region: no-drag;
+    background-color: #203636;
+    border: 0;
+}
+
+#titlebar-button-maximize:hover {
+    background-color: #3e6868;
+}
+
+#maximize-svg {
+    scale: 50%;
+}
+
+#titlebar-button-close {
+    -webkit-app-region: no-drag;
+    background-color: #203636;
+    border: 0;
+}
+
+#titlebar-button-close:hover {
+    background-color: red;
+}
+
+#close-svg {
+    scale: 50%;
+}
